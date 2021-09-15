@@ -1,0 +1,660 @@
+{
+  "contractName": "Form",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"details\":\"Form of differents features\",\"methods\":{},\"title\":\"Form\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/form.sol\":\"Form\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/form.sol\":{\"keccak256\":\"0x5f002a0436dfdaccd7055bf425ce98d3c16636c3d33ccdfdcaa212c9409749d5\",\"urls\":[\"bzz-raw://8f1f615ad17bef83bce189c76c56ee709fb91ea99914db7b0e56fb8f0dbe2d98\",\"dweb:/ipfs/QmP2qMUMjqsJAdjWSDBKALkjAnndV83TmPXDYxAR8kk5K6\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a72315820517300adddc0857c3f9783dd4a3e618f0279d518bbf9592b6890494f904d5da764736f6c63430005100032",
+  "deployedBytecode": "0x6080604052600080fdfea265627a7a72315820517300adddc0857c3f9783dd4a3e618f0279d518bbf9592b6890494f904d5da764736f6c63430005100032",
+  "sourceMap": "131:608:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;131:608:1;;;;;;;",
+  "deployedSourceMap": "131:608:1:-;;;;;",
+  "source": "// SPDX-License-Identifier: GPL-3.0\r\n\r\npragma solidity >=0.4.20;\r\n\r\n/**\r\n * @title Form\r\n * @dev Form of differents features\r\n */\r\ncontract Form {\r\n    \r\n    struct Request {\r\n        string projectName;  // Name of the project \r\n        uint64 studentCode; // Student code\r\n        uint16 signatureCode; // Code of the type of Signature\r\n        string studentEmail;  // Email of the Student \r\n        uint16 investigationGroupCode; // Code of the investigation Group\r\n        uint64 professorCode; // Code of the Profesor in charge of the project\r\n        string projectObjective; // Objetive of the project\r\n        uint16 codeBD; // Code that works like a link to the real db\r\n    }\r\n    \r\n    mapping (uint => Request) assignments;\r\n}",
+  "sourcePath": "D:\\Desktop\\project-contract\\contracts\\form.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/form.sol",
+    "exportedSymbols": {
+      "Form": [
+        56
+      ]
+    },
+    "id": 57,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 34,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".20"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "39:25:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title Form\n@dev Form of differents features",
+        "fullyImplemented": true,
+        "id": 56,
+        "linearizedBaseContracts": [
+          56
+        ],
+        "name": "Form",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Form.Request",
+            "id": 51,
+            "members": [
+              {
+                "constant": false,
+                "id": 36,
+                "name": "projectName",
+                "nodeType": "VariableDeclaration",
+                "scope": 51,
+                "src": "184:18:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 35,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "184:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 38,
+                "name": "studentCode",
+                "nodeType": "VariableDeclaration",
+                "scope": 51,
+                "src": "238:18:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint64",
+                  "typeString": "uint64"
+                },
+                "typeName": {
+                  "id": 37,
+                  "name": "uint64",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "238:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 40,
+                "name": "signatureCode",
+                "nodeType": "VariableDeclaration",
+                "scope": 51,
+                "src": "283:20:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint16",
+                  "typeString": "uint16"
+                },
+                "typeName": {
+                  "id": 39,
+                  "name": "uint16",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "283:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 42,
+                "name": "studentEmail",
+                "nodeType": "VariableDeclaration",
+                "scope": 51,
+                "src": "347:19:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 41,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "347:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 44,
+                "name": "investigationGroupCode",
+                "nodeType": "VariableDeclaration",
+                "scope": 51,
+                "src": "403:29:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint16",
+                  "typeString": "uint16"
+                },
+                "typeName": {
+                  "id": 43,
+                  "name": "uint16",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "403:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46,
+                "name": "professorCode",
+                "nodeType": "VariableDeclaration",
+                "scope": 51,
+                "src": "478:20:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint64",
+                  "typeString": "uint64"
+                },
+                "typeName": {
+                  "id": 45,
+                  "name": "uint64",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "478:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 48,
+                "name": "projectObjective",
+                "nodeType": "VariableDeclaration",
+                "scope": 51,
+                "src": "558:23:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 47,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "558:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 50,
+                "name": "codeBD",
+                "nodeType": "VariableDeclaration",
+                "scope": 51,
+                "src": "619:13:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint16",
+                  "typeString": "uint16"
+                },
+                "typeName": {
+                  "id": 49,
+                  "name": "uint16",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "619:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Request",
+            "nodeType": "StructDefinition",
+            "scope": 56,
+            "src": "158:528:1",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 55,
+            "name": "assignments",
+            "nodeType": "VariableDeclaration",
+            "scope": 56,
+            "src": "698:37:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Request_$51_storage_$",
+              "typeString": "mapping(uint256 => struct Form.Request)"
+            },
+            "typeName": {
+              "id": 54,
+              "keyType": {
+                "id": 52,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "707:4:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "698:25:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Request_$51_storage_$",
+                "typeString": "mapping(uint256 => struct Form.Request)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 53,
+                "name": "Request",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 51,
+                "src": "715:7:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Request_$51_storage_ptr",
+                  "typeString": "struct Form.Request"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 57,
+        "src": "131:608:1"
+      }
+    ],
+    "src": "39:700:1"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/form.sol",
+      "exportedSymbols": {
+        "Form": [
+          56
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".20"
+          ]
+        },
+        "id": 34,
+        "name": "PragmaDirective",
+        "src": "39:25:1"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": "@title Form\n@dev Form of differents features",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            56
+          ],
+          "name": "Form",
+          "scope": 57
+        },
+        "children": [
+          {
+            "attributes": {
+              "canonicalName": "Form.Request",
+              "name": "Request",
+              "scope": 56,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "projectName",
+                  "scope": 51,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 35,
+                    "name": "ElementaryTypeName",
+                    "src": "184:6:1"
+                  }
+                ],
+                "id": 36,
+                "name": "VariableDeclaration",
+                "src": "184:18:1"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "studentCode",
+                  "scope": 51,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint64",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint64",
+                      "type": "uint64"
+                    },
+                    "id": 37,
+                    "name": "ElementaryTypeName",
+                    "src": "238:6:1"
+                  }
+                ],
+                "id": 38,
+                "name": "VariableDeclaration",
+                "src": "238:18:1"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "signatureCode",
+                  "scope": 51,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint16",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint16",
+                      "type": "uint16"
+                    },
+                    "id": 39,
+                    "name": "ElementaryTypeName",
+                    "src": "283:6:1"
+                  }
+                ],
+                "id": 40,
+                "name": "VariableDeclaration",
+                "src": "283:20:1"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "studentEmail",
+                  "scope": 51,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 41,
+                    "name": "ElementaryTypeName",
+                    "src": "347:6:1"
+                  }
+                ],
+                "id": 42,
+                "name": "VariableDeclaration",
+                "src": "347:19:1"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "investigationGroupCode",
+                  "scope": 51,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint16",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint16",
+                      "type": "uint16"
+                    },
+                    "id": 43,
+                    "name": "ElementaryTypeName",
+                    "src": "403:6:1"
+                  }
+                ],
+                "id": 44,
+                "name": "VariableDeclaration",
+                "src": "403:29:1"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "professorCode",
+                  "scope": 51,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint64",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint64",
+                      "type": "uint64"
+                    },
+                    "id": 45,
+                    "name": "ElementaryTypeName",
+                    "src": "478:6:1"
+                  }
+                ],
+                "id": 46,
+                "name": "VariableDeclaration",
+                "src": "478:20:1"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "projectObjective",
+                  "scope": 51,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 47,
+                    "name": "ElementaryTypeName",
+                    "src": "558:6:1"
+                  }
+                ],
+                "id": 48,
+                "name": "VariableDeclaration",
+                "src": "558:23:1"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "codeBD",
+                  "scope": 51,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint16",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint16",
+                      "type": "uint16"
+                    },
+                    "id": 49,
+                    "name": "ElementaryTypeName",
+                    "src": "619:6:1"
+                  }
+                ],
+                "id": 50,
+                "name": "VariableDeclaration",
+                "src": "619:13:1"
+              }
+            ],
+            "id": 51,
+            "name": "StructDefinition",
+            "src": "158:528:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "assignments",
+              "scope": 56,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(uint256 => struct Form.Request)",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(uint256 => struct Form.Request)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 52,
+                    "name": "ElementaryTypeName",
+                    "src": "707:4:1"
+                  },
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "Request",
+                      "referencedDeclaration": 51,
+                      "type": "struct Form.Request"
+                    },
+                    "id": 53,
+                    "name": "UserDefinedTypeName",
+                    "src": "715:7:1"
+                  }
+                ],
+                "id": 54,
+                "name": "Mapping",
+                "src": "698:25:1"
+              }
+            ],
+            "id": 55,
+            "name": "VariableDeclaration",
+            "src": "698:37:1"
+          }
+        ],
+        "id": 56,
+        "name": "ContractDefinition",
+        "src": "131:608:1"
+      }
+    ],
+    "id": 57,
+    "name": "SourceUnit",
+    "src": "39:700:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x53752b438B19ef825B51CaF57Ab4430e2d2d1716",
+      "transactionHash": "0x6db2c419d8d9754750085233694435c17ea50d44d10d287514084c8728079765"
+    }
+  },
+  "schemaVersion": "3.4.2",
+  "updatedAt": "2021-09-15T20:17:12.267Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "details": "Form of differents features",
+    "methods": {},
+    "title": "Form"
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
